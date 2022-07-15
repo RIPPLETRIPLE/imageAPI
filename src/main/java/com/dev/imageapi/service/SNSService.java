@@ -51,10 +51,4 @@ public class SNSService {
 
         sns.unsubscribe(subscriptionArn);
     }
-
-    @SqsListener("-uploads-notification-queue")
-    public void processMessageFromSQS(String message) {
-        PublishRequest publishRequest = new PublishRequest(arn, message);
-        sns.publish(publishRequest);
-    }
 }

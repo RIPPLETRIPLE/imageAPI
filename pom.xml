@@ -117,6 +117,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-aws-messaging</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-java-sdk-lambda</artifactId>
+            <version>1.12.260</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
